@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Form Pendaftaran Online dengan HTML5, CSS Grid, Flexbox, dan JavaScript">
+  <meta name="keywords" content="Form Pendaftaran, HTML5, CSS, JavaScript, Responsif">
+  <meta name="author" content="AILO Workshop">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Form Pendaftaran Online</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Pendaftaran Online</h1>
+    <nav>
+      <ul>
+        <li><a href="#form">Formulir</a></li>
+        <li><a href="#info">Info</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTAINER -->
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Petunjuk</h2>
+      <p>Isi form pendaftaran dengan benar dan lengkap. Pastikan email aktif untuk konfirmasi.</p>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <h2 id="form">Formulir Pendaftaran</h2>
+      <form id="daftarForm">
+        <input type="text" id="nama" placeholder="Nama Lengkap">
+        <input type="email" id="email" placeholder="Email">
+        <select id="jurusan">
+          <option value="">Pilih Jurusan</option>
+          <option value="Informatika">Informatika</option>
+          <option value="Sistem Informasi">Sistem Informasi</option>
+          <option value="Teknik Elektro">Teknik Elektro</option>
+        </select>
+        <button type="submit">Daftar</button>
+        <p id="error" class="error"></p>
+      </form>
+
+      <!-- Info Cards -->
+      <section id="info" class="info-cards">
+        <div class="card">100% Online</div>
+        <div class="card">Gratis Biaya Pendaftaran</div>
+        <div class="card">Kelas Mulai Juli 2025</div>
+      </section>
+
+      <!-- Output DOM Manipulation -->
+      <section style="margin-top:20px;">
+        <h2>Status Pendaftaran</h2>
+        <p id="status">Belum ada data.</p>
+        <button onclick="ubahStatus()">Lihat Status</button>
+      </section>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer id="kontak">
+    <p>&copy; 2025 Form Pendaftaran Online</p>
+  </footer>
+
+  <!-- JAVASCRIPT EKSTERNAL -->
+  <script src="script.js"></script>
+</body>
+</html>
