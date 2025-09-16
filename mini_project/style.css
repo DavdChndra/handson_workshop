@@ -11,7 +11,7 @@ body {
 
 /* HEADER */
 header {
-  background: navy;
+  background: #AC2C2E;
   color: white;
   padding: 20px;
   text-align: center;
@@ -28,18 +28,22 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
+nav a:hover{
+    text-decoration: underline;
+}
 
 /* LAYOUT */
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 0.5fr 2fr;
   gap: 20px;
   padding: 20px;
   max-width: 1200px;
   margin: auto;
 }
 .sidebar {
-  background: lightblue;
+  background: #5D5D5F;
+  color: white;
   padding: 20px;
   border-radius: 8px;
 }
@@ -65,18 +69,20 @@ button {
   font-size: 14px;
 }
 button {
-  background: navy;
+  background: #AC2C2E;
   color: white;
   cursor: pointer;
   border: none;
   font-weight: bold;
+  max-width: 200px;
 }
 button:hover {
-  background: darkblue;
+  background: #752021;
 }
 .error {
-  color: red;
+  color: #AC2C2E;
   font-size: 14px;
+  font-weight: bold;
 }
 
 /* CARD INFO (Flexbox) */
@@ -86,7 +92,7 @@ button:hover {
   margin-top: 20px;
 }
 .card {
-  background: coral;
+  background: #808284;
   flex: 1;
   color: white;
   padding: 20px;
@@ -96,7 +102,7 @@ button:hover {
 
 /* FOOTER */
 footer {
-  background: navy;
+  background: #AC2C2E;
   color: white;
   text-align: center;
   padding: 15px;

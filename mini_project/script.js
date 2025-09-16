@@ -1,6 +1,12 @@
+let sudahDaftar = 0;
+
 // DOM Manipulation
 function ubahStatus() {
-  document.getElementById("status").innerText = "Pendaftaran sedang diproses...";
+  if (sudahDaftar != 0) {
+    document.getElementById("status").innerText = "Pendaftaran sukses";
+  }else{
+    document.getElementById("status").innerText = "Silahkan isi form terlebih dahulu";
+  }
 }
 
 // Event Handling + Form Validation
@@ -24,6 +30,7 @@ document.getElementById("daftarForm").addEventListener("submit", function (e) {
     document.getElementById("error").innerText = "";
     alert("Pendaftaran berhasil!\nNama: " + nama + "\nEmail: " + email + "\nJurusan: " + jurusan);
     document.getElementById("status").innerText = "Pendaftaran berhasil dikirim!";
+    sudahDaftar = 1;
     document.getElementById("daftarForm").reset();
   }
 });

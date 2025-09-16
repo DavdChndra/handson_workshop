@@ -27,7 +27,7 @@
     <!-- Sidebar -->
     <aside class="sidebar">
       <h2>Petunjuk</h2>
-      <p>Isi form pendaftaran dengan benar dan lengkap. Pastikan email aktif untuk konfirmasi.</p>
+      <p>Isi form pendaftaran dengan benar dan lengkap. <br> Pastikan email aktif untuk konfirmasi.</p>
     </aside>
 
     <!-- Main -->
@@ -38,26 +38,26 @@
         <input type="email" id="email" placeholder="Email">
         <select id="jurusan">
           <option value="">Pilih Jurusan</option>
-          <option value="Informatika">Informatika</option>
+          <option value="Teknologi Informasi">Teknologi Informasi</option>
           <option value="Sistem Informasi">Sistem Informasi</option>
-          <option value="Teknik Elektro">Teknik Elektro</option>
+          <option value="Desain Komunikasi Visual">Desain Komunikasi Visual</option>
         </select>
         <button type="submit">Daftar</button>
         <p id="error" class="error"></p>
       </form>
 
-      <!-- Info Cards -->
+      <!-- Info Cards (FlexBox) -->
       <section id="info" class="info-cards">
         <div class="card">100% Online</div>
-        <div class="card">Gratis Biaya Pendaftaran</div>
-        <div class="card">Kelas Mulai Juli 2025</div>
+        <div class="card">Dibuka Secara Umum</div>
+        <div class="card">Salam HEI</div>
       </section>
 
       <!-- Output DOM Manipulation -->
       <section style="margin-top:20px;">
         <h2>Status Pendaftaran</h2>
         <p id="status">Belum ada data.</p>
-        <button onclick="ubahStatus()">Lihat Status</button>
+        <button onclick="ubahStatus()">Lihat Status Terbaru</button>
       </section>
     </main>
   </div>
