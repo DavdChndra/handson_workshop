@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Belajar HTML5 SEO Friendly, CSS Grid, Flexbox, dan JavaScript Dasar" />
+    <meta name="keywords" content="HTML5, SEO, CSS Grid, Flexbox, JavaScript" />
+    <meta name="author" content="Workshop_AILO" />
+    <link rel="preload" href="style.css" as="style" />
+    <title>Tutorial JavaScript dasar</title>
+  </head>
+  <body>
+    <header>
+      <h1>Belajar JavaScript dasar | Workshop AILO</h1>
+    </header>
+    <main>
+      <!-- DOM Manipulation -->
+      <h2>DOM Manipulation</h2>
+
+      <h3>getElementById</h3>
+
+      <h4>DOM Manipulation Teks</h4>
+      <p id="teks">Halo, ini teks awal.</p>
+      <button onclick="ubahTeks()">Ubah Teks</button>
+
+      <h4>DOM Manipulation Gambar</h4>
+      <img src="../images/logo_html.png" alt="Gambar logo HTML" id="gambar" style="max-width: 100px" />
+      <br />
+      <button onclick="ubahGambar()">Ubah Gambar</button>
+
+      <h3>querySelector</h3>
+      <p id="paragraf">Ini teks dengan id</p>
+      <p class="teks">Ini teks dengan class</p>
+      <button onclick="ubahSelector()">Ubah Menggunakan Selector</button>
+
+      <!-- Event Handling -->
+      <h3>Event Handling</h3>
+      <button id="btn">Klik Saya</button>
+      <p id="output"></p>
+
+      <!-- Form Validation -->
+      <h2>Form Validation</h2>
+      <h3>Form Pendaftaran</h3>
+      <form id="myForm">
+        Nama: <input type="text" id="nama" /> <br /><br />
+        Email: <input type="text" id="email_text" /> <br /><br />
+        Email: <input type="email" id="email" /> <br /><br />
+        <button type="submit">Kirim</button>
+        <br />
+        <p id="error" class="error"></p>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; Workshop AILO (1) 2025</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
