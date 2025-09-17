@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid dan Flexbox</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 10px;
+      }
+      .grid-item {
+        background: #AC2C2E;
+        padding: 20px;
+        text-align: center;
+      }
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        background: lightgray;
+        padding: 10px;
+      }
+      .flex-item {
+        background: #5D5D5F;
+        padding: 15px;
+        flex: 1;
+        margin: 5px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CSS Grid dan Flexbox</h1>
+    </header>
+    <main>
+      <div class="grid-container" style="color: white;">
+        <div class="grid-item">Kiri</div>
+        <div class="grid-item">Tengah</div>
+        <div class="grid-item">Kanan</div>
+      </div>
+
+      <div class="flex-container">
+        <div class="flex-item" style="color: white;">Box 1</div>
+        <div class="flex-item">Box 2</div>
+        <div class="flex-item">Box 3</div>
+      </div>
+    </main>
+  </body>
+</html>
